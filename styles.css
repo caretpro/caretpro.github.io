@@ -98,3 +98,13 @@ nav ul li a.active {
         border-top: 1px solid #575757;
     }
 }
+
+.contact-bar {
+    width: 70%;
+    text-align: center;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
