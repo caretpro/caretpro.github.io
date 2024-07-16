@@ -69,6 +69,15 @@ nav ul li a.active {
 
 /* Styles for mobile devices */
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+    }
+    .contact-bar {
+        width: 100%;
+        text-align: center;
+    }
     nav ul {
         flex-direction: column;
         display: none;
