@@ -3,68 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARET</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 70%;
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        img {
-            max-width: 50%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .content {
-            text-align: center;
-        }
-        .tool-support {
-            text-align: left; /* Alinea el texto a la derecha */
-        }
-        ul {
-            list-style-type: none;
-            padding: 5px;
-            margin: 5px;
-        }
-        li {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-        <h1>CARET</h1>
-        <p>We present a CARET, which is a Java software developer assistant built on an extensible and flexible architecture. Large Language Models (LLMs) are the backbone of chatbotslike ChatGPT, and are used to assist in all sort of domains. Following
-this trend, we are witnessing proposals of LLM-based assistants for coding tasks. However, current IDEs lack mechanisms tailored to facilitate the integration of such assistants, from how to interact with them to how to apply their suggestions without leaving the environment. To fill this gap, we present an extensible architecture for the definition of assistance tasks based on LLMs, and their binding to IDE commands and natural language prompts.</p>
-        <img src="caret.jpg" alt="Image">
-        </div>
-        <div class="tool-support">
-            <h3>Tool support</h3>
-            <ul>
-<li>Code completion</li>
-<li>Documentation</li>
-<li>Unit testing</li>
-<li>Error detection and correction</li>
-<li>Code optimisation</li>
-<li>Code comprehension</li>
-<li>Method (re)naming</li>
-            </ul>
-</p>
-</div>
+    <div class="header">
+        CARET
     </div>
+    <div class="container">
+        <nav>
+            <div class="menu-icon">☰ Menú</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="tool.html">Features</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>CARET</h1>
+            <p>We present a CARET, which is a Java software developer assistant built on an extensible and flexible architecture. Large Language Models (LLMs) are the backbone of chatbotslike ChatGPT, and are used to assist in all sort of domains. Following
+this trend, we are witnessing proposals of LLM-based assistants for coding tasks. However, current IDEs lack mechanisms tailored to facilitate the integration of such assistants, from how to interact with them to how to apply their suggestions without leaving the environment. To fill this gap, we present an extensible architecture for the definition of assistance tasks based on LLMs, and their binding to IDE commands and natural language prompts.</p>
+            <p><img src="caret.jpg" alt="Image"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
