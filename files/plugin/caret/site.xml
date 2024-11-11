@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/feature_caret_1.0.0.202410272234.jar" id="feature_caret" version="1.0.0.202410272234"/>
+   <feature url="features/Caret_1.0.0.202411110914.jar" id="Caret" version="1.0.0.202411110914">
+      <category name="Tools"/>
+   </feature>
+   <category-def name="Tools" label="Tools"/>
 </site>
