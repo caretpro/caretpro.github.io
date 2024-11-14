@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/Caret_1.0.0.202411110914.jar" id="Caret" version="1.0.0.202411110914">
+   <feature url="features/Caret_1.0.0.202411140749.jar" id="Caret" version="1.0.0.202411140749">
       <category name="Tools"/>
    </feature>
    <category-def name="Tools" label="Tools"/>
