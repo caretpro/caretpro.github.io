@@ -16,13 +16,17 @@ img {
 
 .header {
     width: 100%;
-    padding: 20px 0;
+    padding: 5px 0;
     background-color: #333;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
+}
+
+.header img {
+      height: 60px; 
 }
 
 .container {
