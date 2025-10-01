@@ -43,6 +43,10 @@ nav {
     width: 100%;
 }
 
+nav .menu-icon {
+    visibility: hidden;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -92,6 +96,7 @@ nav ul li a.active {
     }
 
     nav .menu-icon {
+        visibility: visible;
         display: block;
         background-color: #333;
         padding: 10px;
