@@ -86,12 +86,12 @@ nav ul li a.active {
         width: 100%;
         text-align: center;
     }
-    nav ul {
+    .container nav ul {
         flex-direction: column;
         display: none;
     }
 
-    nav ul.show {
+    .container nav ul.show {
         display: flex;
     }
 
@@ -106,11 +106,11 @@ nav ul li a.active {
         width: 100%;
     }
 
-    nav ul li {
+    .container nav ul li {
         display: block;
     }
 
-    nav ul li a {
+    .container nav ul li a {
         display: block;
         padding: 10px;
         border-top: 1px solid #575757;
@@ -125,4 +125,20 @@ nav ul li a.active {
 video {
     display: block;
     margin: 0 auto;
+}
+
+.docs img {
+    display: block;       /* Permite centrar la imagen con margin */
+    width: 40%;           /* Ancho del 60% respecto al div padre */
+    height: auto;         /* Mantiene la proporción de la imagen */
+    margin: 20px auto;    /* Centra horizontalmente y da espacio vertical */
+    border-radius: 4px;   /* Opcional: bordes redondeados para un look moderno */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Opcional: sombra suave */
+}
+
+/* Ajuste para móviles: en pantallas pequeñas es mejor que ocupen más ancho */
+@media (max-width: 768px) {
+    .docs img {
+        width: 80%;
+    }
 }
