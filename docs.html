@@ -40,7 +40,12 @@
 					
                 </ul>
             </li>
-            <li style="margin-top: 10px;"><a href="#section2" style="text-decoration: none; color: #0066cc;">2. Task Definition</a></li>
+            <li style="margin-top: 10px;"><a href="#section2" style="text-decoration: none; color: #0066cc;">2. Assistance Tasks</a></li>
+				<ul style="list-style-type: none; padding-left: 20px; margin-top: 5px;">
+					<li><a href="#section2.1" style="text-decoration: none; color: #0066cc;">2.1. Task Definition</a></li>
+					<li><a href="#section2.2" style="text-decoration: none; color: #0066cc;">2.2. Task Sharing</a></li>
+					<li><a href="#section2.3" style="text-decoration: none; color: #0066cc;">2.3. Task installation</a></li>
+				</ul>
 			<li style="margin-top: 10px;"><a href="#section3" style="text-decoration: none; color: #0066cc;">3. Usage</a></li>
         </ul>
     </div>
@@ -84,7 +89,9 @@
     </section>
 
     <section>
-        <h3 id="section2">2. Task Definition</h3>
+		<h3 id="section2">2. Assistance Tasks</h3>
+	
+        <h4 id="section2.1">2.1. Task Definition</h4>
         <p>
             Caret utilizes the TaskGroup extension point to add new tasks. Users can easily define one or multiple tasks using the standard Eclipse extension UI.
         </p>
@@ -99,6 +106,24 @@
             Optional fields include the commandId and any additional instructions to be appended to the task description. Furthermore, the user must define the necessary parameters, the context to be sent, and the action to be deployed.
         </p>
         <img src="img/task-definition.png" alt="Task Definition Screen" style="max-width:100%; height:auto;">
+		
+		<h4 id="section2.2">2.2. Task Sharing</h4>
+        <p>
+            
+		Users can sharing created tasks by right-clicking and selecting <i>CARET -&gt; Create Feature and Update Site Projects</i>. Next, the user can upload the task plugin to the previously configured Task Repository by right-clicking and selecting <i>CARET -&gt; Upload Task to Repository</i>.
+		</p>
+		<p>
+        <img src="img/create-feature-site.png" alt="" style="max-width:100%; height:auto;">
+		</p>
+		<p>
+        <img src="img/upload-task.png" alt="" style="max-width:100%; height:auto;">
+		</p>
+		<h4 id="section2.3">2.3. Task Installation</h4>
+        <p>
+        To install a task from the tasks repository, the user must click on the "Add Task" icon located in the chat window toolbar. Next, the assistant displays a list of available tasks, which can be installed by clicking the "Install" button.
+		</p>
+        <img src="img/repository-screenshot.png" alt="" style="max-width:100%; height:auto;">
+		
     </section>
 	
 	<section>
@@ -110,6 +135,7 @@
             Additionally, the user can request a task through the text field in the chat window.
         </p>
         <img src="img/caret-usage.png" alt="Caret Usage via Context Menu and Chat" style="max-width:100%; height:auto;">
+		
     </section>
 </div>
 			
