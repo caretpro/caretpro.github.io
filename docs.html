@@ -47,6 +47,7 @@
 					<li><a href="#section2.3" style="text-decoration: none; color: #0066cc;">2.3. Task installation</a></li>
 				</ul>
 			<li style="margin-top: 10px;"><a href="#section3" style="text-decoration: none; color: #0066cc;">3. Usage</a></li>
+			<li style="margin-top: 10px;"><a href="#section4" style="text-decoration: none; color: #0066cc;">4. Statistics</a></li>
         </ul>
     </div>
 
@@ -135,6 +136,28 @@
             Additionally, the user can request a task through the text field in the chat window.
         </p>
         <img src="img/caret-usage.png" alt="Caret Usage via Context Menu and Chat" style="max-width:100%; height:auto;">
+		
+    </section>
+	<section>
+        <h3 id="section4">4. Statistics</h3>
+        <p>Users can open the assistant's statistics windows, which shows information on Caret usage traceability data grouped into different views:</p>
+			<ul>
+				<li>View by Task: Groups the project elements that used a specific task.</li>
+				<li>View by Agent: Shows the LLM agents used in the project and the required tasks.</li>
+				<li>View by Project: Shows the project’s package structure displaying classes and methods used by the support tasks.</li>
+				<li>View by Coverage: Shows tasks coverage rate per unit of use (class or method) relative to the entire project.</li>
+				<li>View by User: Groups task usage by user.</li>
+			</ul>
+		<img src="img/statistics-views.png" alt="Caret Statistics" style="max-width:100%; height:auto;">
+		<p>The statistical views displays the following metrics obtained from the traceability information:</p>
+			<ul>
+				<li>Task acceptance rate: It is the ratio of accepted suggestions to the total number of task requested.</li>
+				<li>Task survival rate: The rate of accepted suggestions that have not been deleted and are still active.</li>
+				<li>Task preservation rate: The rate of accepted suggestions that are still active but have been modified.</li>
+				<li>Task coverage: It is the ratio of the number of units (level of task granularity) that utilised the assistant for a given task to the total number of such units in the project.</li>
+			</ul>
+
+        <img src="img/statistics.png" alt="Caret Statistics" style="max-width:100%; height:auto;">
 		
     </section>
 </div>
