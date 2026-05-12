@@ -48,6 +48,11 @@
 				</ul>
 			<li style="margin-top: 10px;"><a href="#section3" style="text-decoration: none; color: #0066cc;">3. Usage</a></li>
 			<li style="margin-top: 10px;"><a href="#section4" style="text-decoration: none; color: #0066cc;">4. Statistics</a></li>
+			<li style="margin-top: 10px;"><a href="#section5" style="text-decoration: none; color: #0066cc;">5. Task P2 Repository</a></li>
+				<ul style="list-style-type: none; padding-left: 20px; margin-top: 5px;">
+					<li><a href="#section5.1" style="text-decoration: none; color: #0066cc;">5.1. Dependency Installation</a></li>
+					<li><a href="#section5.2" style="text-decoration: none; color: #0066cc;">5.2. Execution of the server</a></li>
+</ul>
         </ul>
     </div>
 
@@ -158,6 +163,38 @@
 			</ul>
 
         <img src="img/statistics.png" alt="Caret Statistics" style="max-width:100%; height:auto;">
+		
+    </section>
+	
+	<section>
+        <h3 id="section5">5. Task P2 Repository</h3>
+  
+		  <p>To install the P2 repository, you must first store the <i>requirements.txt</i> and <i>main.py</i> files in a folder on your server. In the terminal, navigate to the folder location and execute the following commands:</p>
+
+		  <h4 id="section5.1">5.1. Dependency Installation</h4>
+  
+			<p>Create a Python virtual environment to install all necessary dependencies, which include the FastAPI server and its required libraries.</p>
+		  
+		  <pre>
+	# Create the virtual environment
+	python -m venv .venv
+
+	# Activate the environment
+	# On macOS/Linux:
+	source .venv/bin/activate
+	# On Windows:
+	.venv\Scripts\activate
+
+	# Install dependencies
+	pip install -r requirements.txt
+		  </pre>
+
+		  <h4 id="section5.2">5.2. Execution of the server</h4>
+		  
+			<p>Once the environment is ready and the libraries are installed, run the <i>main.py</i> file. <i>Executing this file will start the FastAPI server and initialize the application.</i></p>
+		  <pre>
+	python main.py
+		  </pre>
 		
     </section>
 </div>
