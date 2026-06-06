@@ -22,32 +22,90 @@
 				<li><a href="docs.html">Docs</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <h2>Tool Support</h2>
-            <p>– Code completion: CARET is able to create a new project with the given name, a new
-class or interface with the given name in the current project, a class implementing a
-given interface, or a subclass of a given abstract class. It can also generate the code
-of a method, for which the user must provide either a description of the method, or
-the method name and its parameters.<br>
-– Documentation: It generates the Javadoc comments for a complete Java file. If the
-user does not provide a file but a code fragment, it can generate either Javadoc
-comments or line-by-line comments for the code.<br>
-– Unit testing: It creates a JUnit test for a given class.<br>
-– Error detection and correction: It can help detect simple semantic errors and propose
-corrections. Both functionalities rely solely on GPT (i.e., the assistant does
-not integrate analysis or error detection/fix methods developed ad-hoc for Java).<br>
-– Code optimisation: CARET provides four optimisation options for a selected code
-fragment: efficiency improvement, readability improvement, complexity reduction,
-or general optimisation.<br>
-– Code comprehension: It produces an explanation in natural language of a selected
-piece of code.<br>
-– Method (re)naming: It renames a method to reflect its<br></p>
-            <p><img src="assistance.png" alt="Image"></p>
-<p> </p>
-            <h2>Traceability</h2>
-            <p><img src="tracebility.png" alt="Image"></p>
-        </div>
-    </div>
+		<div class="content">
+			<div class="features-wrapper">
+				
+				<aside class="features-sidebar">
+					<ul>
+						<li><a href="#" class="sidebar-link active" data-target="assistance-tasks">Assistance Tasks</a></li>
+						<li><a href="#" class="sidebar-link" data-target="validation-tasks">Validation Tasks</a></li>
+						<li><a href="#" class="sidebar-link" data-target="statistics">Statistics</a></li>
+						<li><a href="#" class="sidebar-link" data-target="collaboration-support">Collaboration Support</a></li>
+					</ul>
+				</aside>
+
+				<main class="features-body">
+					
+					<section id="assistance-tasks" class="feature-section active">
+						<h2>Assistance tasks</h2>
+						<p>
+						Assistance tasks represent the programming tasks supported by the assistant. These tasks require the retrieval of parameters defined in their configuration, as well as the necessary context information, which is then sent to the LLM agent for processing. Furthermore, these tasks can go through validation cycles and finally deploy the corresponding defined actions to complete a given task. Developers can easily add new assistance tasks using an extension point. CARET offers a series of pre-built assistance tasks, which can be grouped into:
+						</p>
+						<p>– Code completion: CARET is able to create a new project with the given name, a new
+							class or interface with the given name in the current project, a class implementing a
+							given interface, or a subclass of a given abstract class. It can also generate the code
+							of a method, for which the user must provide either a description of the method, or
+							the method name and its parameters.<br>
+							– Documentation: It generates the Javadoc comments for a complete Java file. If the
+							user does not provide a file but a code fragment, it can generate either Javadoc
+							comments or line-by-line comments for the code.<br>
+							– Unit testing: It creates a JUnit test for a given class.<br>
+							– Error detection and correction: It can help detect simple semantic errors and propose
+							corrections. Both functionalities rely solely on GPT (i.e., the assistant does
+							not integrate analysis or error detection/fix methods developed ad-hoc for Java).<br>
+							– Code optimisation: CARET provides four optimisation options for a selected code
+							fragment: efficiency improvement, readability improvement, complexity reduction,
+							or general optimisation.<br>
+							– Code comprehension: It produces an explanation in natural language of a selected
+							piece of code.<br>
+						</p>
+						<p><img src="assistance.png" alt="Assistance Image" style="max-width:70%; height:auto;"></p>
+					</section>
+
+					<section id="validation-tasks" class="feature-section">
+						<h2>Validation Tasks</h2>
+						<p>CARET allows you to configure validation tasks for each assistance task. These validation tasks enable the application of improvement cycles. CARET supports two types of validation:
+						<br><br>
+						- Pre-validation: This validation is performed upon receiving the response from the LLM agent, before displaying it to the user. If the received proposal passes validation (e.g., Compilation), it is shown to the user for them to decide whether to accept or reject the proposal.
+						<br>
+						- Post-validation: This validation is performed after the user has accepted the proposal and it has been applied to the code. The validation is then executed, for example, a JUnit test to verify the validity of the proposal.
+						<br><br>
+						These validations can be performed iteratively, according to the number of iterations defined by the user. This allows the user to obtain functional and valid code proposals.
+						</p>
+						<p><img src="img/task-validations.png" alt="Task Validations" style="max-width:70%; height:auto;"></p>
+					</section>
+
+					<section id="statistics" class="feature-section">
+						<h2>Statistics</h2>
+						<p>
+						CARET records the interaction between the assistant and the user, including the suggestions provided by the assistant. To do this, the assistant stores this information in a MongoDB database using the proposed traceability model.
+						<br>
+						Users can view statistical information extracted from the stored interactions data across different views. The available views show the information grouped by::
+						</p>
+						<ul>
+                            <li>Task: Groups the project elements that used a specific task.</li>
+                            <li>Agent: Shows the LLM agents used in the project and the required tasks.</li>
+                            <li>Project: Shows the project’s package structure displaying classes and methods used by the support tasks.</li>
+                            <li>Coverage: Shows tasks coverage rate per unit of use (class or method) relative to the entire project.</li>
+                            <li>User: Groups task usage by user.</li>
+                        </ul>
+                        <p><img src="img/statistics-views.png" alt="Caret Statistics" style="max-width:60%; height:auto;"></p>
+					</section>
+
+					<section id="collaboration-support" class="feature-section">
+						<h2>Collaboration Support</h2>
+						<p>CARET offers collaborative support for development teams from two perspectives:</p>
+						- <b>Shared traceability model</b>: This enables to see which team members are using CARET, including information on requested tasks, the agents used, and when and where in the project they implemented the received suggestions.
+                        <p><img src="img/statistics.png" alt="Caret Statistics" style="max-width:60%; height:auto;"></p>
+						- <b>Support task repository</b>: Developers can share a support task defined in the P2 Repository so that any other user can install it if needed.
+                        <p><img src="img/repository-screenshot.png" alt="Caret Statistics" style="max-width:60%; height:auto;"></p>
+
+					</section>
+
+				</main>
+			</div>
+		</div>
+	</div>
     <div class="contact-bar">
         <font color="#660000" face="Tahoma"><b>Contact:</b></font>   <span >Albert Contreras (<i>Albert [dot] Contreras [at] uam [dot] es</i>) | <a href="http://www.miso.es">MISO Research Group</a></span> 
     </div>

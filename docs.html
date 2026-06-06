@@ -22,185 +22,231 @@
 				<li><a href="docs.html" class="active">Docs</a></li>
             </ul>
         </nav>
-        <div class="content">
+
+		<div class="content">
             
-			<div class="docs">
-    <h2>Documentation</h2>
+            <div class="features-wrapper docs-page">
+                
+                <aside class="features-sidebar">
+                    <h3 style="margin-top: 0;">Documentation</h3>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        
+                        <li>
+                            <a href="#" class="sidebar-link active" data-target="section1">1. Configuration</a>
+                            <ul style="list-style-type: none; padding-left: 15px; margin-top: 5px; margin-bottom: 10px;">
+                                <li><a href="#" class="sidebar-link" data-target="section1.1">1.1. Agents</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section1.2">1.2. Database</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section1.3">1.3. Tasks</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section1.4">1.4. Task Repository</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section1.5">1.5. Version Control</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="sidebar-link" data-target="section2">2. Assistance Tasks</a>
+                            <ul style="list-style-type: none; padding-left: 15px; margin-top: 5px; margin-bottom: 10px;">
+                                <li><a href="#" class="sidebar-link" data-target="section2.1">2.1. Task Definition</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section2.2">2.2. Task Sharing</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section2.3">2.3. Task installation</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li style="margin-bottom: 12px;"><a href="#" class="sidebar-link" data-target="section3">3. Usage</a></li>
+                        
+                        <li style="margin-bottom: 12px;"><a href="#" class="sidebar-link" data-target="section4">4. Statistics</a></li>
+                        
+                        <li>
+                            <a href="#" class="sidebar-link" data-target="section5">5. Task P2 Repository</a>
+                            <ul style="list-style-type: none; padding-left: 15px; margin-top: 5px;">
+                                <li><a href="#" class="sidebar-link" data-target="section5.1">5.1. Dependency Installation</a></li>
+                                <li><a href="#" class="sidebar-link" data-target="section5.2">5.2. Execution of the server</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
 
-    <div class="index" style="margin-bottom: 40px; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-        <h3 style="margin-top: 0;">Table of Contents</h3>
-        <ul style="list-style-type: none; padding-left: 0;">
-            <li><a href="#section1" style="text-decoration: none; color: #0066cc;">1. Configuration</a>
-                <ul style="list-style-type: none; padding-left: 20px; margin-top: 5px;">
-                    <li><a href="#section1.1" style="text-decoration: none; color: #0066cc;">1.1. Agents</a></li>
-                    <li><a href="#section1.2" style="text-decoration: none; color: #0066cc;">1.2. Database</a></li>
-                    <li><a href="#section1.3" style="text-decoration: none; color: #0066cc;">1.3. Tasks</a></li>
-                    <li><a href="#section1.4" style="text-decoration: none; color: #0066cc;">1.4. Task Repository</a></li>
-                    <li><a href="#section1.5" style="text-decoration: none; color: #0066cc;">1.5. Version Control</a></li>
-					
-                </ul>
-            </li>
-            <li style="margin-top: 10px;"><a href="#section2" style="text-decoration: none; color: #0066cc;">2. Assistance Tasks</a></li>
-				<ul style="list-style-type: none; padding-left: 20px; margin-top: 5px;">
-					<li><a href="#section2.1" style="text-decoration: none; color: #0066cc;">2.1. Task Definition</a></li>
-					<li><a href="#section2.2" style="text-decoration: none; color: #0066cc;">2.2. Task Sharing</a></li>
-					<li><a href="#section2.3" style="text-decoration: none; color: #0066cc;">2.3. Task installation</a></li>
-				</ul>
-			<li style="margin-top: 10px;"><a href="#section3" style="text-decoration: none; color: #0066cc;">3. Usage</a></li>
-			<li style="margin-top: 10px;"><a href="#section4" style="text-decoration: none; color: #0066cc;">4. Statistics</a></li>
-			<li style="margin-top: 10px;"><a href="#section5" style="text-decoration: none; color: #0066cc;">5. Task P2 Repository</a></li>
-				<ul style="list-style-type: none; padding-left: 20px; margin-top: 5px;">
-					<li><a href="#section5.1" style="text-decoration: none; color: #0066cc;">5.1. Dependency Installation</a></li>
-					<li><a href="#section5.2" style="text-decoration: none; color: #0066cc;">5.2. Execution of the server</a></li>
-</ul>
-        </ul>
-    </div>
+                <main class="features-body">
+				
+					<div id="section1" class="feature-section active">
+                        <h3>1. Configuration</h3>
+                        <p>
+                           To run CARET correctly, you must configure the assistant by completing a series of required parameters in the Eclipse Preferences window. This includes configuring: LLM agents for task classification and processing, the MongoDB connection, task context and validation cycles, the P2 repository, and the Git user for traceability records
+						</p>
+                        <p class="p-grey-italic">Select a subsection below to view its full documentation:</p>
+                        <ul style="list-style-type: none; padding-left: 15px; margin-top: 10px;">
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section1.1" style="text-decoration: none; color: #0066cc;">1.1. Agents</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section1.2" style="text-decoration: none; color: #0066cc;">1.2. Database</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section1.3" style="text-decoration: none; color: #0066cc;">1.3. Tasks</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section1.4" style="text-decoration: none; color: #0066cc;">1.4. Task Repository</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section1.5" style="text-decoration: none; color: #0066cc;">1.5. Version Control</a></li>
+                        </ul>
+                    </div>
 
-    <section>
-        <h3 id="section1">1. Configuration</h3>
+                    <div id="section1.1" class="feature-section">
+                        <h4>1.1. Agents</h4>
+                        <p>
+                            Caret allows users to configure the execution order of agents responsible for classifying and processing tasks. These agents do not necessarily have to use the same technology. Additionally, you can configure the agent sequence for code completion (Content Assistant).
+                        </p>
+                        <img src="img/agents-config.png" alt="Agents Configuration Screen" style="max-width:70%; height:auto;">
+                        <p>
+                            For each LLM agent, the user must configure the API Key, the API URL, and the Model.
+                        </p>
+                        <img src="img/agent-config.png" alt="Agents Configuration Screen" style="max-width:70%; height:auto;">
+                    </div>
 
-        <h4 id="section1.1">1.1. Agents</h4>
-        <p>
-            Caret allows users to configure the execution order of agents responsible for classifying and processing tasks. These agents do not necessarily have to use the same technology. Additionally, you can configure the agent sequence for code completion (Content Assistant).
-        </p>
-        <img src="img/agents-config.png" alt="Agents Configuration Screen" style="max-width:100%; height:auto;">
-        <p>
-            For each LLM agent, the user must configure the API Key, the API URL, and the Model.
-        </p>
-        <img src="img/agent-config.png" alt="Agents Configuration Screen" style="max-width:100%; height:auto;">
+                    <div id="section1.2" class="feature-section">
+                        <h4>1.2. Database</h4>
+                        <p>
+                            Configure MongoDB access by entering the Connection String and the Database Name. This database stores the assistant's usage traceability model and the newly defined task plugins.
+                        </p>
+                        <img src="img/database-config.png" alt="Database Configuration Screen" style="max-width:70%; height:auto;">
+                    </div>
 
-        <h4 id="section1.2">1.2. Database</h4>
-        <p>
-            Configure MongoDB access by entering the Connection String and the Database Name. This database stores the assistant's usage traceability model and the newly defined task plugins.
-        </p>
-        <img src="img/database-config.png" alt="Database Configuration Screen" style="max-width:100%; height:auto;">
+                    <div id="section1.3" class="feature-section">
+                        <h4>1.3. Tasks</h4>
+                        <p>
+                            Users can configure tasks by defining the number of pre-validation and post-validation cycles, as well as the context information to be sent with each request for a specific task.
+                        </p>
+                        <img src="img/tasks-config.png" alt="Tasks Configuration Screen" style="max-width:70%; height:auto;">
+                    </div>
 
-        <h4 id="section1.3">1.3. Tasks</h4>
-        <p>
-            Users can configure tasks by defining the number of pre-validation and post-validation cycles, as well as the context information to be sent with each request for a specific task.
-        </p>
-        <img src="img/tasks-config.png" alt="Tasks Configuration Screen" style="max-width:100%; height:auto;">
+                    <div id="section1.4" class="feature-section">
+                        <h4>1.4. Task Repository</h4>
+                        <p>
+                            Newly defined tasks can be shared for install via a Task P2 Repository. To configure access, the user must enter the Repository URL. Optionally, a bearer token can be added if one has already been defined on the plugin server.
+                        </p>
+                        <img src="img/repository-config.png" alt="Task Repository Configuration Screen" style="max-width:70%; height:auto;">
+                    </div>
 
-        <h4 id="section1.4">1.4. Task Repository</h4>
-        <p>
-            Newly defined tasks can be shared for install via a Task P2 Repository. To configure access, the user must enter the Repository URL. Optionally, a bearer token can be added if one has already been defined on the plugin server.
-        </p>
-        <img src="img/repository-config.png" alt="Task Repository Configuration Screen" style="max-width:100%; height:auto;">
+                    <div id="section1.5" class="feature-section">
+                        <h4>1.5. Version Control</h4>
+                        <p>
+                            Caret automatically detects the current Git user and completes the Git User and Git Email fields. The user can manually edit these fields if he wishes to use different credentials for traceability records.
+                        </p>
+                        <img src="img/version-control-config.png" alt="Version Control Configuration Screen" style="max-width:70%; height:auto;">
+                    </div>
 
-        <h4 id="section1.5">1.5. Version Control</h4>
-        <p>
-            Caret automatically detects the current Git user and completes the Git User and Git Email fields. The user can manually edit these fields if he wishes to use different credentials for traceability records.
-        </p>
-        <img src="img/version-control-config.png" alt="Version Control Configuration Screen" style="max-width:100%; height:auto;">
-    </section>
+                    <div id="section2" class="feature-section">
+                        <h3>2. Assistance Tasks</h3>
+                        <p>
+                        Users can extend and manage the CARET features offered by defining new custom tasks using the Eclipse extensions UI. Moreover, users can share those plugins by uploading them to a P2 repository, and the team developers can install available tasks.
+						</p>
+                        <p class="p-grey-italic">Select a subsection below to view its full documentation:</p>
+                        <ul style="list-style-type: none; padding-left: 15px; margin-top: 10px;">
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section2.1" style="text-decoration: none; color: #0066cc;">2.1. Task Definition</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section2.2" style="text-decoration: none; color: #0066cc;">2.2. Task Sharing</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section2.3" style="text-decoration: none; color: #0066cc;">2.3. Task installation</a></li>
+                        </ul>
+                    </div>
 
-    <section>
-		<h3 id="section2">2. Assistance Tasks</h3>
-	
-        <h4 id="section2.1">2.1. Task Definition</h4>
-        <p>
-            Caret utilizes the TaskGroup extension point to add new tasks. Users can easily define one or multiple tasks using the standard Eclipse extension UI.
-        </p>
-        <p>
-            The following mandatory information must be defined:
-        </p>
-        <ul style="padding-left: 20px;">
-            <li>Code, Name, Description, Bind type.</li>
-            <li>Pre-validations and Post-validations (if applicable)</li>
-        </ul>
-        <p>
-            Optional fields include the commandId and any additional instructions to be appended to the task description. Furthermore, the user must define the necessary parameters, the context to be sent, and the action to be deployed.
-        </p>
-        <img src="img/task-definition.png" alt="Task Definition Screen" style="max-width:100%; height:auto;">
-		
-		<h4 id="section2.2">2.2. Task Sharing</h4>
-        <p>
-            
-		Users can sharing created tasks by right-clicking and selecting <i>CARET -&gt; Create Feature and Update Site Projects</i>. Next, the user can upload the task plugin to the previously configured Task Repository by right-clicking and selecting <i>CARET -&gt; Upload Task to Repository</i>.
-		</p>
-		<p>
-        <img src="img/create-feature-site.png" alt="" style="max-width:100%; height:auto;">
-		</p>
-		<p>
-        <img src="img/upload-task.png" alt="" style="max-width:100%; height:auto;">
-		</p>
-		<h4 id="section2.3">2.3. Task Installation</h4>
-        <p>
-        To install a task from the tasks repository, the user must click on the "Add Task" icon located in the chat window toolbar. Next, the assistant displays a list of available tasks, which can be installed by clicking the "Install" button.
-		</p>
-        <img src="img/repository-screenshot.png" alt="" style="max-width:100%; height:auto;">
-		
-    </section>
-	
-	<section>
-        <h3 id="section3">3. Usage</h3>
-        <p>
-            Caret allows users to request a task through defined commands (tasks) in the contextual menu, which can be accessed by right-clicking on the Eclipse code editor or the Package Explorer. 
-        </p>
-        <p>
-            Additionally, the user can request a task through the text field in the chat window.
-        </p>
-        <img src="img/caret-usage.png" alt="Caret Usage via Context Menu and Chat" style="max-width:100%; height:auto;">
-		
-    </section>
-	<section>
-        <h3 id="section4">4. Statistics</h3>
-        <p>Users can open the assistant's statistics windows, which shows information on Caret usage traceability data grouped into different views:</p>
-			<ul>
-				<li>View by Task: Groups the project elements that used a specific task.</li>
-				<li>View by Agent: Shows the LLM agents used in the project and the required tasks.</li>
-				<li>View by Project: Shows the project’s package structure displaying classes and methods used by the support tasks.</li>
-				<li>View by Coverage: Shows tasks coverage rate per unit of use (class or method) relative to the entire project.</li>
-				<li>View by User: Groups task usage by user.</li>
-			</ul>
-		<img src="img/statistics-views.png" alt="Caret Statistics" style="max-width:100%; height:auto;">
-		<p>The statistical views displays the following metrics obtained from the traceability information:</p>
-			<ul>
-				<li>Task acceptance rate: It is the ratio of accepted suggestions to the total number of task requested.</li>
-				<li>Task survival rate: The rate of accepted suggestions that have not been deleted and are still active.</li>
-				<li>Task preservation rate: The rate of accepted suggestions that are still active but have been modified.</li>
-				<li>Task coverage: It is the ratio of the number of units (level of task granularity) that utilised the assistant for a given task to the total number of such units in the project.</li>
-			</ul>
+                    <div id="section2.1" class="feature-section">
+                        <h4>2.1. Task Definition</h4>
+                        <p>
+                            Caret utilizes the TaskGroup extension point to add new tasks. Users can easily define one or multiple tasks using the standard Eclipse extension UI.
+                        </p>
+                        <p>
+                            The following mandatory information must be defined:
+                        </p>
+                        <ul style="padding-left: 20px;">
+                            <li>Code, Name, Description, Bind type.</li>
+                            <li>Pre-validations and Post-validations (if applicable)</li>
+                        </ul>
+                        <p>
+                            Optional fields include the commandId and any additional instructions to be appended to the task description. Furthermore, the user must define the necessary parameters, the context to be sent, and the action to be deployed.
+                        </p>
+                        <img src="img/task-definition.png" alt="Task Definition Screen" style="max-width:100%; height:auto;">
+                    </div>
 
-        <img src="img/statistics.png" alt="Caret Statistics" style="max-width:100%; height:auto;">
-		
-    </section>
-	
-	<section>
-        <h3 id="section5">5. Task P2 Repository</h3>
-  
-		  <p>To install the P2 repository, you must first store the <i>requirements.txt</i> and <i>main.py</i> files in a folder on your server. In the terminal, navigate to the folder location and execute the following commands:</p>
+                    <div id="section2.2" class="feature-section">
+                        <h4>2.2. Task Sharing</h4>
+                        <p>
+                        Users can sharing created tasks by right-clicking and selecting <i>CARET -&gt; Create Feature and Update Site Projects</i>. Next, the user can upload the task plugin to the previously configured Task Repository by right-clicking and selecting <i>CARET -&gt; Upload Task to Repository</i>.
+                        </p>
+                        <p>
+                        <img src="img/create-feature-site.png" alt="" style="max-width:100%; height:auto;">
+                        </p>
+                        <p>
+                        <img src="img/upload-task.png" alt="" style="max-width:100%; height:auto;">
+                        </p>
+                    </div>
 
-		  <h4 id="section5.1">5.1. Dependency Installation</h4>
-  
-			<p>Create a Python virtual environment to install all necessary dependencies, which include the FastAPI server and its required libraries.</p>
-		  
-		  <pre>
-	# Create the virtual environment
-	python -m venv .venv
+                    <div id="section2.3" class="feature-section">
+                        <h4>2.3. Task Installation</h4>
+                        <p>
+                        To install a task from the tasks repository, the user must click on the "Add Task" icon located in the chat window toolbar. Next, the assistant displays a list of available tasks, which can be installed by clicking the "Install" button.
+                        </p>
+                        <img src="img/repository-screenshot.png" alt="" style="max-width:70%; height:auto;">
+                    </div>
 
-	# Activate the environment
-	# On macOS/Linux:
-	source .venv/bin/activate
-	# On Windows:
-	.venv\Scripts\activate
+                    <div id="section3" class="feature-section">
+                        <h3>3. Usage</h3>
+                        <p>
+                            Caret allows users to request a task through defined commands (tasks) in the contextual menu, which can be accessed by right-clicking on the Eclipse code editor or the Package Explorer. 
+                        </p>
+                        <p>
+                            Additionally, the user can request a task through the text field in the chat window.
+                        </p>
+                        <img src="img/caret-usage.png" alt="Caret Usage via Context Menu and Chat" style="max-width:100%; height:auto;">
+                    </div>
 
-	# Install dependencies
-	pip install -r requirements.txt
-		  </pre>
+                    <div id="section4" class="feature-section">
+                        <h3>4. Statistics</h3>
+                        <p>Users can open the assistant's statistics windows, which shows information on Caret usage traceability data grouped into different views:</p>
+                        <ul>
+                            <li>View by Task: Groups the project elements that used a specific task.</li>
+                            <li>View by Agent: Shows the LLM agents used in the project and the required tasks.</li>
+                            <li>View by Project: Shows the project’s package structure displaying classes and methods used by the support tasks.</li>
+                            <li>View by Coverage: Shows tasks coverage rate per unit of use (class or method) relative to the entire project.</li>
+                            <li>View by User: Groups task usage by user.</li>
+                        </ul>
+                        <img src="img/statistics-views.png" alt="Caret Statistics" style="max-width:60%; height:auto;">
+                        <p>The statistical views displays the following metrics obtained from the traceability information:</p>
+                        <ul>
+                            <li>Task acceptance rate: It is the ratio of accepted suggestions to the total number of task requested.</li>
+                            <li>Task survival rate: The rate of accepted suggestions that have not been deleted and are still active.</li>
+                            <li>Task preservation rate: The rate of accepted suggestions that are still active but have been modified.</li>
+                            <li>Task coverage: It is the ratio of the number of units (level of task granularity) that utilised the assistant for a given task to the total number of such units in the project.</li>
+                        </ul>
+                        <img src="img/statistics.png" alt="Caret Statistics" style="max-width:60%; height:auto;">
+                    </div>
 
-		  <h4 id="section5.2">5.2. Execution of the server</h4>
-		  
-			<p>Once the environment is ready and the libraries are installed, run the <i>main.py</i> file. <i>Executing this file will start the FastAPI server and initialize the application.</i></p>
-		  <pre>
-	python main.py
-		  </pre>
-		
-    </section>
-</div>
-			
+                    <div id="section5" class="feature-section">
+                        <h3>5. Task P2 Repository</h3>
+                        <p>To install the P2 repository, you must first store the <i>requirements.txt</i> and <i>main.py</i> files in a folder on your server. In the terminal, navigate to the folder location and execute the commands to install and run the server</p>
+                        <p class="p-grey-italic">Select a subsection below to view its full documentation:</p>
+                        <ul style="list-style-type: none; padding-left: 15px; margin-top: 10px;">
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section5.1" style="text-decoration: none; color: #0066cc;">5.1. Dependency Installation</a></li>
+                            <li style="margin-bottom: 8px;"><a href="#" class="sidebar-link" data-target="section5.2" style="text-decoration: none; color: #0066cc;">5.2. Execution of the server</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="section5.1" class="feature-section">
+                        <h4>5.1. Dependency Installation</h4>
+                        <p>Create a Python virtual environment to install all necessary dependencies, which include the FastAPI server and its required libraries.</p>
+                        <pre># Create the virtual environment
+python -m venv .venv
+
+# Activate the environment
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows:
+.venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt</pre>
+                    </div>
+
+                    <div id="section5.2" class="feature-section">
+                        <h4>5.2. Execution of the server</h4>
+                        <p>Once the environment is ready and the libraries are installed, run the <i>main.py</i> file. Executing this file will start the FastAPI server and initialize the application.</p>
+                        <pre>python main.py</pre>
+                    </div>
+
+                </main>
+            </div>
         </div>
-    </div>
+
+   </div>
     <div class="contact-bar">
         <font color="#660000" face="Tahoma"><b>Contact:</b></font>   <span >Albert Contreras (<i>Albert [dot] Contreras [at] uam [dot] es</i>) | <a href="http://www.miso.es">MISO Research Group</a></span> 
     </div>

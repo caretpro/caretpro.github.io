@@ -22,36 +22,60 @@
 				<li><a href="docs.html">Docs</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <h1>Demo</h1>
-			<div style="display: grid; place-items: center; text-align: center;">
-				<h3>Task request by command</h3>
-				<p style="text-align: left;">The user can interact with Caret by using the context menu and selecting a task to apply to the code. Once the user views the assistant's proposal, he can decide whether to accept and apply it to the code. Meanwhile, the chat window shows the user's task request, the assistant's response, and the validation results.<p>
-				<video controls width="50%">
-					<source src="demo_command.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video></p>
-				<h3>Task request by message</h3>
-				<p style="text-align: left;">The user can also request a task by sending a text message through the text field of the assistant's chat window.</p>
-				<p><video controls width="50%">
-					<source src="demo_message.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video></p>
-				<h3>Statistics</h3>
-				<p style="text-align: left;">The Statistics View shows statistical data generated from the assistant's contribution traceability log, as well as user-assistant interactions. The following views are available: View by Tasks, View by Agents, View by Project, View by Coverage, and View by User.</p>
-				<p><video controls width="50%">
-					<source src="demo_statistics.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video></p>
-				<h3>Task definition and sharing</h3>
-				<p style="text-align: left;">To define a task, the user must create an extension point using Caret Task Project; the necessary dependencies will be added automatically. Then, the required information must be declared as shown in the video. Next, the Caret Feature and Update Site projects can be created automatically using the context menu on the Caret Task Project. Finally, by right-clicking on the created Caret Update Site project, the user can share the task in the task repository.</p></p>
-				<p><video controls width="50%">
-					<source src="demo_task_sharing.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video></p>
+		<div class="content">
+			<div class="features-wrapper">
+				
+				<aside class="features-sidebar">
+					<ul>
+						<li><a href="#" class="sidebar-link active" data-target="task-command">Task request by command</a></li>
+						<li><a href="#" class="sidebar-link" data-target="task-message">Task request by message</a></li>
+						<li><a href="#" class="sidebar-link" data-target="demo-statistics">Statistics</a></li>
+						<li><a href="#" class="sidebar-link" data-target="task-sharing">Task definition and sharing</a></li>
+					</ul>
+				</aside>
+
+				<main class="features-body" style="display: grid; place-items: center; text-align: center;">
+					
+					<section id="task-command" class="feature-section active">
+						<h3>Task request by command</h3>
+						<p style="text-align: left;">The user can interact with Caret by using the context menu and selecting a task to apply to the code. Once the user views the assistant's proposal, he can decide whether to accept and apply it to the code. Meanwhile, the chat window shows the user's task request, the assistant's response, and the validation results.</p>
+						<video controls width="70%">
+							<source src="demo_command.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</section>
+
+					<section id="task-message" class="feature-section">
+						<h3>Task request by message</h3>
+						<p style="text-align: left;">The user can also request a task by sending a text message through the text field of the assistant's chat window.</p>
+						<video controls width="70%">
+							<source src="demo_message.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</section>
+
+					<section id="demo-statistics" class="feature-section">
+						<h3>Statistics</h3>
+						<p style="text-align: left;">The Statistics View shows statistical data generated from the assistant's contribution traceability log, as well as user-assistant interactions. The following views are available: View by Tasks, View by Agents, View by Project, View by Coverage, and View by User.</p>
+						<video controls width="70%">
+							<source src="demo_statistics.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</section>
+
+					<section id="task-sharing" class="feature-section">
+						<h3>Task definition and sharing</h3>
+						<p style="text-align: left;">To define a task, the user must create an extension point using Caret Task Project; the necessary dependencies will be added automatically. Then, the required information must be declared as shown in the video. Next, the Caret Feature and Update Site projects can be created automatically using the context menu on the Caret Task Project. Finally, by right-clicking on the created Caret Update Site project, the user can share the task in the task repository.</p>
+						<video controls width="70%">
+							<source src="demo_task_sharing.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</section>
+
+				</main>
 			</div>
-        </div>
-    </div>
+		</div>
+	</div>
     <div class="contact-bar">
         <font color="#660000" face="Tahoma"><b>Contact:</b></font>   <span >Albert Contreras (<i>Albert [dot] Contreras [at] uam [dot] es</i>) | <a href="http://www.miso.es">MISO Research Group</a></span> 
     </div>

@@ -142,3 +142,95 @@ video {
         width: 80%;
     }
 }
+/* =======================*/
+
+/* menú a la izquierda y el contenido a la derecha */
+.features-wrapper {
+    display: flex;
+    gap: 30px; /* Espacio de separación entre el menú y el contenido */
+    align-items: flex-start;
+}
+
+.features-sidebar {
+    flex: 0 0 250px; /* Ancho fijo de 250px para el menú */
+    position: sticky;
+    top: 20px; /* El menú se queda fijo al hacer scroll */
+    background-color: #f9f9f9; /* Cambia al color de tu diseño */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.features-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features-sidebar ul li {
+    margin-bottom: 12px;
+}
+
+.features-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    cursor: pointer; /* Muestra la mano de clic en el menú */
+}
+
+/* Estado activo o hover del menú */
+.features-sidebar ul li a:hover,
+.features-sidebar ul li a.active {
+    background-color: #007bff; /* Cambia por tu color temático */
+    color: white;
+}
+
+.features-body {
+    flex: 1; /* Ocupa todo el espacio restante a la derecha */
+}
+
+/* Ocultar todas las secciones de contenido por defecto */
+.feature-section {
+    display: none;
+    margin-bottom: 50px; /* Espaciado interno opcional */
+}
+
+/* Mostrar únicamente la sección que tenga la clase 'active' */
+.feature-section.active {
+    display: block;
+}
+
+/* Ajuste para que las imágenes no se deformen ni se salgan del contenedor */
+.feature-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+	DOCS.HTML
+   ========================================================================== */
+
+/* Reduce el espacio vertical entre los elementos de la lista principal */
+.docs-page .features-sidebar ul li {
+    margin-bottom: 4px; /* Bajó de 12px a 4px */
+}
+
+/* Reduce el espacio vertical entre las subsecciones (los sub-ul) */
+.docs-page .features-sidebar ul li ul {
+    margin-top: 2px !important;
+    margin-bottom: 6px !important;
+}
+
+/* Comprime el tamaño del fondo azul (padding) y el texto de los enlaces */
+.docs-page .features-sidebar ul li a {
+    padding: 4px 10px; /* Bajó de 8px a 4px arriba/abajo para comprimir el alto */
+    font-size: 14px;   /* Un toque más pequeño si quieres que sea más compacto aún */
+}
+
+.p-grey-italic {
+  color: grey;          /* O un tono más específico como #666 o #777 */
+  font-style: italic;
+}
